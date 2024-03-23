@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/OOP5.dir/main.cpp.o CMakeFiles/OOP5.dir/Number.cpp.o  -o OOP5 
