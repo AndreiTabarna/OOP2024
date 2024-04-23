@@ -1,0 +1,3 @@
+/home/andrei/CLionProjects/Lab7.2/CMakeFiles/Lab7_2.dir
+/home/andrei/CLionProjects/Lab7.2/CMakeFiles/edit_cache.dir
+/home/andrei/CLionProjects/Lab7.2/CMakeFiles/rebuild_cache.dir
