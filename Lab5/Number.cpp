@@ -215,6 +215,23 @@ void Number::SwitchBase(int newBase) {
 void Number::RemoveMostSignificantDigit() {
     if (size > 1) {
         char* new_value = new char[size];
+        for (int i = 1; i < size; i++) {
+            new_value[i - 1] = value[i];
+        }
+        new_value[size - 1] = '\0';
+        delete[] value;
+        value = new_value;
+        size--;
+    }
+    else {
+        value[0] = '0'; 
+    }
+}
+
+
+void Number::RemoveLeastSignificantDigit() {
+    if (size > 1) {
+        char* new_value = new char[size];
         for (int i = 0; i < size - 1; i++) {
             new_value[i] = value[i];
         }
@@ -225,13 +242,6 @@ void Number::RemoveMostSignificantDigit() {
     }
     else {
         value[0] = '0';
-    }
-}
-
-void Number::RemoveLeastSignificantDigit() {
-    if (size > 1) {
-        size--;
-        value[size] = '0';
     }
 }
 
